@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>AI project</title>
   </head>
-  <body>
-    <header>
-      <h1>Welcome to my AI project</h1>
-    </header>
+ <div class="container">
+      <header>
+        <h1>AI project</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Contents will go here
-        <br />
-        Contents will go here
-        <br />
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter topic"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="story">
+          Contents will go here
+          <br />
+          Contents will go here
+        </div>
+      </main>
 
     <footer>
       This project was coded by
@@ -42,6 +42,8 @@
         Netlify.</a
       >
     </footer>
+</div>
+    
 
     <script src="src/index.js"></script>
   </body>

@@ -6,11 +6,11 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI project</title>
+    <title>AI Short Story Generator</title>
   </head>
  <div class="container">
       <header>
-        <h1>AI Story Generator</h1>
+        <h1>AI Short Story Generator📖</h1>
       </header>
 
       <main>
@@ -18,7 +18,7 @@
         <form id="story-generator-form">
           <input
             type="text"
-            placeholder="Enter your story topic"
+            placeholder="Enter your story prompt"
             autofocus
             required
             autocomplete="off"
@@ -27,8 +27,9 @@
           />
           <input type="submit" class="submit-button" />
         </form>
+        <div class="hint">i.e: Nature, love, books</div>
         </div>
-        <div class="story" id="story"></div>
+        <div class="story hidden" id="story"></div>
       </main>
 
     <footer>

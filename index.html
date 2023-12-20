@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI project</title>
   </head>
@@ -13,18 +14,21 @@
       </header>
 
       <main>
+        <div class="form-container">
         <form id="story-generator-form">
           <input
             type="text"
-            placeholder="Enter your chosen topic here"
+            placeholder="Enter your story topic"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="story" id="story"></div>
+        </div>
+        <div class="story-hidden" id="story"></div>
       </main>
 
     <footer>
